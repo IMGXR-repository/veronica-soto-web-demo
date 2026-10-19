@@ -79,3 +79,8 @@
 @media(max-width:600px){.instagram{padding-inline:16px}.post-grid{gap:14px}.instagram h2{font-size:38px}}
 
 .post-grid{max-width:340px}.post-grid:focus-visible{outline:2px solid #53756f;outline-offset:6px;border-radius:12px}
+/* Revisión UX/UI: centrar el conjunto y mostrar varias publicaciones. */
+.post-grid{--card:calc((100% - 40px)/3);max-width:1040px;padding:8px 0 18px;gap:20px;scroll-padding-inline:0}
+.post-card{scroll-snap-align:start}
+@media(max-width:900px){.post-grid{--card:calc((100% - 20px)/2)}}
+@media(max-width:540px){.post-grid{--card:82%;gap:14px}}
