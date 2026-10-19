@@ -8,9 +8,9 @@
 .work-photo.portrait-hero{background-position:82% top}@media(max-width:800px){.work-photo.portrait-hero{background-position:83% top}}
 .work-photo.portrait-hero{background-image:url(retrato-ia-v1.png);background-size:cover;background-position:center 28%}@media(max-width:800px){.work-photo.portrait-hero{background-size:cover;background-position:center 20%;min-height:600px}}
 .working-portrait{background-image:url(procedimiento-ia-v1.png);background-size:cover;background-position:center center}@media(max-width:800px){.working-portrait{background-size:cover;background-position:center center}}
-.instagram{padding:80px 8%;display:grid;grid-template-columns:.8fr 1.5fr;gap:60px;border-top:1px solid #102b3622}.instagram>div>p:not(.eyebrow){font-size:14px;line-height:1.8;color:var(--muted)}.post-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.post-card{display:block;background:white;padding:12px 12px 22px;border:1px solid #102b3620}.post-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:contain;background:#e9eef0}.post-card span{display:flex;justify-content:space-between;font-size:13px;margin:18px 4px 8px;font-weight:600}.post-card small{font-size:10px;margin:4px;color:var(--muted)}.post-card:hover{border-color:var(--ink)}@media(max-width:800px){.instagram{padding:60px 7%;grid-template-columns:1fr;gap:30px}.post-grid{gap:12px}.post-card{padding:8px}.post-card span{font-size:11px}.post-card small{font-size:9px}}
+.instagram{padding:80px 8%;display:grid;grid-template-columns:.8fr 1.5fr;gap:60px;border-top:1px solid #102b3622}.instagram>div>p:not(.eyebrow){font-size:14px;line-height:1.8;color:var(--muted)}.post-grid{display:grid;gap:24px}.post-card{display:block;background:white;padding:12px 12px 22px;border:1px solid #102b3620}.post-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:contain;background:#e9eef0}.post-card span{display:flex;justify-content:space-between;font-size:13px;margin:18px 4px 8px;font-weight:600}.post-card small{font-size:10px;margin:4px;color:var(--muted)}.post-card:hover{border-color:var(--ink)}@media(max-width:800px){.instagram{padding:60px 7%;grid-template-columns:1fr;gap:30px}.post-grid{gap:12px}.post-card{padding:8px}.post-card span{font-size:11px}.post-card small{font-size:9px}}
 .reviews{padding:80px 8%;background:#e7ece4}.review-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.review-grid article{padding:30px;border-top:1px solid #102b3640;background:#f6f3ec}.review-grid blockquote{font-family:News,serif;font-size:30px;line-height:1.25;margin:0 0 30px}.review-grid p{font-size:13px;margin-bottom:6px}.review-grid small{font-size:10px;color:var(--muted)}.review-grid a{display:block;font-size:12px;margin-top:20px;text-decoration:underline;text-underline-offset:4px}.review-note{font-size:10px;line-height:1.8;color:var(--muted);max-width:780px;margin:25px 0 0}@media(max-width:800px){.reviews{padding:60px 7%}.review-grid{grid-template-columns:1fr;gap:20px}}
-.instagram{grid-template-columns:1fr}.instagram>div:first-child{max-width:650px}.post-grid{grid-template-columns:repeat(3,1fr)}.post-text-preview{aspect-ratio:4/5;background:linear-gradient(145deg,#183b48,#416b70);padding:25px;color:white;display:flex;flex-direction:column;justify-content:space-between}.post-text-preview strong{font-family:News,serif;font-size:36px;font-weight:400}.post-text-preview small{color:#dcf38c}.post-text-preview span{font-size:11px}@media(max-width:800px){.post-grid{grid-template-columns:1fr 1fr}.post-text-preview{padding:15px}.post-text-preview strong{font-size:25px}}
+.instagram{grid-template-columns:1fr}.instagram>div:first-child{max-width:650px}.post-grid{}.post-text-preview{aspect-ratio:4/5;background:linear-gradient(145deg,#183b48,#416b70);padding:25px;color:white;display:flex;flex-direction:column;justify-content:space-between}.post-text-preview strong{font-family:News,serif;font-size:36px;font-weight:400}.post-text-preview small{color:#dcf38c}.post-text-preview span{font-size:11px}@media(max-width:800px){.post-grid{}.post-text-preview{padding:15px}.post-text-preview strong{font-size:25px}}
 
 /* Revisión integral: seis publicaciones, ritmo, márgenes y escena sin marco interior. */
 :root{--gutter:clamp(24px,6vw,100px)}
@@ -50,18 +50,23 @@
 .post-grid{gap:16px}.post-card{padding:8px 8px 16px}.post-card span{font-size:12px;min-height:54px}.post-card small{font-size:10px}
 .review-heading{grid-template-columns:1fr;gap:18px}.review-grid article{padding:26px}
 }
-@media(max-width:380px){.post-grid{grid-template-columns:1fr}.post-card span{min-height:0}.steps{grid-template-columns:1fr}}
+@media(max-width:380px){.post-grid{}.post-card span{min-height:0}.steps{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.post-card{transition:none}.post-card:hover{transform:none}}
 
 .post-card img{height:auto;aspect-ratio:4/5}
 /* Galería compacta y uniforme: el original completo queda en Instagram. */
-.post-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;max-width:960px;width:100%}
+.post-grid{gap:22px;max-width:960px;width:100%}
 .post-card{padding:8px 8px 16px;min-width:0;border-radius:10px}
 .post-card img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;object-position:center;border-radius:5px}
 .post-card span{font-size:12px;line-height:1.5;min-height:36px;margin:12px 4px 6px}
 .post-card small{font-size:10px;line-height:1.5;margin:0 4px}
-@media(max-width:800px){.post-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.post-card span{min-height:40px;font-size:11px}.post-card small{font-size:9px}}
+@media(max-width:800px){.post-grid{gap:14px}.post-card span{min-height:40px;font-size:11px}.post-card small{font-size:9px}}
 
 .rating-summary{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:30px;font-size:12px;color:var(--muted)}.review-stars{color:#8a641e;font-size:25px;letter-spacing:4px}.doctor{padding-bottom:60px}.reviews{padding-top:60px}
 
 .demo-notice{padding:10px 24px;background:#102b36;color:#f6f3ec;text-align:center;font:12px Manrope,sans-serif;letter-spacing:.4px}
+
+/* Galería adaptable al ancho real: 1–4 columnas, miniaturas cuadradas. */
+.post-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));max-width:1200px;gap:clamp(14px,2vw,22px);min-width:0}
+.post-card span{font-size:12px;min-height:0;overflow-wrap:anywhere}.post-card small{font-size:11px}
+@media(max-width:800px){.hero{grid-template-columns:minmax(0,1fr)}.hero-copy{min-width:0}h1{font-size:clamp(44px,13.5vw,54px)}}
