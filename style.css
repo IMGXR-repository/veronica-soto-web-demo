@@ -70,3 +70,12 @@
 .post-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));max-width:1200px;gap:clamp(14px,2vw,22px);min-width:0}
 .post-card span{font-size:12px;min-height:0;overflow-wrap:anywhere}.post-card small{font-size:11px}
 @media(max-width:800px){.hero{grid-template-columns:minmax(0,1fr)}.hero-copy{min-width:0}h1{font-size:clamp(44px,13.5vw,54px)}}
+
+/* Carrusel de una fila; cada publicación se alinea al centro al navegar. */
+.instagram{display:block;text-align:center}.instagram>div:first-child{margin:0 auto 36px;max-width:760px}
+.post-grid{--card:min(76vw,300px);display:flex;flex-wrap:nowrap;max-width:1040px;width:100%;margin-inline:auto;gap:20px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;padding:8px var(--edge,0px) 18px;scrollbar-width:thin;scrollbar-color:#53756f #dbe6de;box-sizing:border-box}
+.post-card{flex:0 0 var(--card);scroll-snap-align:center;scroll-snap-stop:always;text-align:left;transform:none}.post-card:hover{transform:none}
+.carousel-controls{display:flex;justify-content:center;align-items:center;gap:24px;margin:22px auto 0}.carousel-controls button{width:44px;height:44px;border:1px solid #53756f;border-radius:50%;background:transparent;color:var(--ink);font-size:22px}.carousel-controls button:disabled{opacity:.3;cursor:default}.carousel-status{font-size:12px;min-width:55px;font-variant-numeric:tabular-nums}
+@media(max-width:600px){.instagram{padding-inline:16px}.post-grid{gap:14px}.instagram h2{font-size:38px}}
+
+.post-grid{max-width:340px}.post-grid:focus-visible{outline:2px solid #53756f;outline-offset:6px;border-radius:12px}
