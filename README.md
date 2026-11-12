@@ -1,14 +1,7 @@
-# Verónica Soto — demostración web
+# Dra. Verónica Soto — web divulgativa
 
-Propuesta de diseño no oficial para revisión. No constituye una web oficial de la doctora ni documentación clínica.
+Versión revisada el 12-11-2026: portada con recorrido3D al hacer scroll, Instagram, Sobre mí visual y directorio de13artículos organizado en9zonas.
 
-## Publicación
-GitHub Pages: rama `main`, carpeta `/ (root)`. Los cambios enviados a esa rama actualizan el mismo enlace cuando finaliza el despliegue. No hay caducidad automática.
+GitHub Pages publica la rama main desde la raíz. Los recursos son locales y los enlaces utilizan rutas relativas para conservar el subdirectorio de la web. No se configura un dominio nuevo.
 
-## Actualización local
-La versión de trabajo está en la carpeta V5 de Diseño Web IA. El agente sincroniza los archivos publicables, comprueba el resultado, crea un commit y hace push. Este repositorio contiene únicamente la web y sus avisos de procedencia, no la memoria de JARVIS ni investigaciones internas.
-
-## Recursos
-Ver `creditos.html` y avisos de licencia junto a los recursos. Las fotografías, publicaciones y opiniones conservan sus derechos originales; no se conceden derechos de terceros. Modelo anatómico: licencia y atribuciones en `LICENSE-MODEL.txt`. Three.js MIT; fuentes SIL OFL.
-
-Noindex solicita exclusión a buscadores; no es control de acceso. La web y el repositorio serán públicos cuando se publiquen.
+Este repositorio contiene el paquete web; las fuentes y evidencias de revisión se conservan en el proyecto local Diseño Web IA. Información divulgativa, no sustituye una valoración médica. Créditos y licencias en creditos.html y assets/.
