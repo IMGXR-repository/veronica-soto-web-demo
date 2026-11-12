@@ -1,0 +1,27 @@
+/* Mobile reading path: figures and text occupy separate blocks. */
+.journey .mobile-scene-figure{display:none}
+@media(max-width:800px){
+ #recorrido.journey{min-height:0}
+ #recorrido .journey-visual{display:none}
+ #recorrido .journey-text{margin:0;width:100%;pointer-events:auto}
+ #recorrido .journey-text article{min-height:0;padding:42px var(--gutter) 32px;display:block;border-top:1px solid #102b3620}
+ #recorrido .journey-text h2{max-width:none;font-size:clamp(36px,6vw,48px)}
+ #recorrido .journey-text article>p:not(.eyebrow){font-size:14px;line-height:1.8;max-width:58ch}
+ #recorrido .journey-text .educational{font-size:11px!important}
+ #recorrido .mobile-scene-figure{display:block;margin:26px 0 0}
+ #recorrido .mobile-scene-figure img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;background:#dbe6de}
+ #recorrido .mobile-scene-figure figcaption{font-size:10px;line-height:1.6;color:#4e6762;margin-top:10px}
+ #recorrido .scroll-cue{display:none}
+ .method .anatomy-backdrop{display:none}
+}
+/* A visit begun on mobile stays lightweight through rotation to landscape. */
+.scene-lite #recorrido.journey{min-height:0}
+.scene-lite #recorrido .journey-visual{display:none}
+.scene-lite #recorrido .journey-text{margin:0;width:100%;pointer-events:auto}
+.scene-lite #recorrido .journey-text article{min-height:0;padding:42px var(--gutter) 32px;display:block;border-top:1px solid #102b3620}
+.scene-lite #recorrido .journey-text h2{max-width:none;font-size:clamp(36px,6vw,48px)}
+.scene-lite #recorrido .journey-text article>p:not(.eyebrow){font-size:14px;line-height:1.8;max-width:58ch}
+.scene-lite #recorrido .mobile-scene-figure{display:block;margin:26px 0 0;max-width:720px}
+.scene-lite #recorrido .mobile-scene-figure img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;background:#dbe6de}
+.scene-lite #recorrido .mobile-scene-figure figcaption{font-size:10px;line-height:1.6;color:#4e6762;margin-top:10px}
+.scene-lite #recorrido .scroll-cue,.scene-lite .method .anatomy-backdrop{display:none}

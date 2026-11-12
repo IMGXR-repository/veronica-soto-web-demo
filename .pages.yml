@@ -1,0 +1,144 @@
+# FUENTE PORTABLE LOCAL. Sin instalación ni conexión de servicio.
+# published:false excluye de la web, NO oculta ficheros en repositorio público.
+media:
+  - name: editorial
+    label: Imágenes de artículos
+    input: site/static/assets/articulos
+    output: /assets/articulos
+    extensions: [jpg, jpeg, png, webp]
+    rename: random
+content:
+  - name: articles
+    label: Artículos
+    type: collection
+    path: content/articles
+    format: json
+    subfolders: false
+    filename:
+      template: "{fields.slug}.json"
+      field: create
+    operations:
+      create: true
+      rename: false
+      delete: false
+    view:
+      primary: title
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: Título
+        type: string
+        required: true
+      - name: slug
+        label: Identificador URL (estable tras publicar)
+        type: string
+        required: true
+      - name: excerpt
+        label: Resumen
+        type: text
+        required: true
+      - name: category
+        label: Categoría
+        type: select
+        required: true
+        options:
+          values:
+            - label: Para entender el dolor
+              name: entender-el-dolor
+            - label: Hombro
+              name: hombro
+            - label: Codo
+              name: codo
+            - label: Espalda, nalga y pierna
+              name: espalda-nalga-pierna
+            - label: Cadera
+              name: cadera
+            - label: Rodilla
+              name: rodilla
+            - label: Pie
+              name: pie
+            - label: Nervios
+              name: nervios
+            - label: Después de una cirugía
+              name: despues-cirugia
+            - label: Mano y muñeca
+              name: mano-y-muneca
+            - label: Los tratamientos, explicados
+              name: tratamientos
+      - name: date
+        label: Fecha editorial (YYYY-MM-DD; conservar legado sin inventar)
+        type: string
+        description: Fecha real de publicación YYYY-MM-DD, distinta de la revisión médica. Conservar la precisión importada y revisar la fecha si se aplaza la publicación.
+        required: false
+      - name: image
+        label: Imagen de cabecera
+        type: image
+        options:
+          media: editorial
+      - name: image_alt
+        label: Descripción alternativa de la imagen
+        type: string
+      - name: body
+        label: Artículo
+        type: rich-text
+        required: true
+        options:
+          format: html
+          media: editorial
+          switcher: false
+      - name: published
+        label: Publicado en la web (guardar inicia publicación)
+        description: Si hay referencias a un artículo que se quiere retirar, el build falla y conserva la versión anterior. Localiza y resuelve sus enlaces antes de despublicar; no se redirigen al índice automáticamente.
+        type: boolean
+        default: false
+  - name: instagram
+    label: Instagram en portada
+    type: collection
+    path: content/instagram
+    format: json
+    subfolders: false
+    filename:
+      template: "{primary}.json"
+      field: create
+    operations:
+      create: true
+      rename: false
+      delete: false
+    view:
+      primary: title
+      sort: order
+      order: asc
+    fields:
+      - name: url
+        label: Enlace de Instagram (https://www.instagram.com/...)
+        type: string
+        required: true
+      - name: title
+        label: Título de la tarjeta
+        type: string
+        required: true
+      - name: image
+        label: Portada manual con derechos de uso
+        type: image
+        required: true
+        options:
+          media: editorial
+      - name: image_alt
+        label: Descripción alternativa de la portada
+        type: string
+        required: true
+      - name: published
+        label: Visible en el carrusel (guardar actualiza la web)
+        type: boolean
+        default: false
+      - name: order
+        label: Orden en el carrusel (menor primero)
+        type: number
+        required: true
+settings:
+  content:
+    merge: true
+  commit:
+    identity: app
+

@@ -1,0 +1,412 @@
+{
+  "origin": "https://draveronicasoto.es",
+  "snapshotManifestSHA256": "e467b22aab2d727e1f748aaca6ee30102671bceb8bca99be287759c457b7d9d2",
+  "categories": [
+    {
+      "id": "entender-el-dolor",
+      "label": "Para entender el dolor"
+    },
+    {
+      "id": "hombro",
+      "label": "Hombro"
+    },
+    {
+      "id": "codo",
+      "label": "Codo"
+    },
+    {
+      "id": "espalda-nalga-pierna",
+      "label": "Espalda, nalga y pierna"
+    },
+    {
+      "id": "cadera",
+      "label": "Cadera"
+    },
+    {
+      "id": "rodilla",
+      "label": "Rodilla"
+    },
+    {
+      "id": "pie",
+      "label": "Pie"
+    },
+    {
+      "id": "nervios",
+      "label": "Nervios"
+    },
+    {
+      "id": "despues-cirugia",
+      "label": "Después de una cirugía"
+    },
+    {
+      "id": "mano-y-muneca",
+      "label": "Mano y muñeca"
+    },
+    {
+      "id": "tratamientos",
+      "label": "Los tratamientos, explicados"
+    }
+  ],
+  "importedArticles": {
+    "dolor-agudo-y-cronico": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 0,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "dolor-de-hombro": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 1,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "calcificacion-hombro": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 2,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "hombro-congelado": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 3,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "epicondilitis": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 4,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "ciatica": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 5,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "dolor-nalga-al-sentarse": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 6,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "lumbalgia": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 7,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 1
+    },
+    "hernia-discal": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 8,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 3
+    },
+    "dolor-sacroiliaco": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 9,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 11
+    },
+    "trocanteritis": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 10,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "artrosis-rodilla": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 11,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "quiste-de-baker": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 12,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 0
+    },
+    "tendinitis-rotuliana": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 13,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 7
+    },
+    "pata-de-ganso": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 14,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 10
+    },
+    "fascitis-plantar": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 15,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "neuroma-de-morton": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 16,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 5
+    },
+    "tendinitis-aquiles": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 17,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 8
+    },
+    "nervio-atrapado": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 18,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "neuralgia-pudendo": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 19,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "meralgia-parestesica": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 20,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 4
+    },
+    "seroma-tras-cirugia": {
+      "date": "2026-11",
+      "reviewedMonth": "2026-11",
+      "order": 21,
+      "prefix": "\n<p class=\"meta\">Dra. Verónica Soto · Noviembre de 2026</p>\n",
+      "articleClass": "",
+      "latestOrder": 100000
+    },
+    "dedo-en-resorte": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 22,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 2
+    },
+    "tunel-carpiano": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 23,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 6
+    },
+    "tendinitis-de-quervain": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 24,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 9
+    },
+    "infiltracion-ecoguiada": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 25,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 12
+    },
+    "plasma-rico-en-plaquetas": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 26,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 13
+    },
+    "infiltraciones-corticoide": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 27,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 14
+    },
+    "bloqueo-nervioso": {
+      "date": "2026-11-13",
+      "reviewedMonth": "2026-11",
+      "order": 28,
+      "prefix": "",
+      "articleClass": "medical-body",
+      "latestOrder": 15
+    }
+  },
+  "articleSchema": {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "inLanguage": "es",
+    "author": {
+      "@type": "Person",
+      "name": "Verónica Soto Verdugo",
+      "honorificPrefix": "Dra.",
+      "jobTitle": "Radióloga intervencionista",
+      "url": "https://draveronicasoto.es/",
+      "sameAs": [
+        "https://www.instagram.com/dra_veronica_soto/",
+        "https://www.linkedin.com/in/ver%C3%B3nica-soto-7b18a2277/"
+      ]
+    },
+    "reviewedBy": {
+      "@type": "Person",
+      "name": "Verónica Soto Verdugo",
+      "honorificPrefix": "Dra.",
+      "jobTitle": "Radióloga intervencionista",
+      "url": "https://draveronicasoto.es/",
+      "sameAs": [
+        "https://www.instagram.com/dra_veronica_soto/",
+        "https://www.linkedin.com/in/ver%C3%B3nica-soto-7b18a2277/"
+      ]
+    }
+  },
+  "reservedRoutes": [
+    "index",
+    "articulos",
+    "sobre-mi",
+    "aviso-legal",
+    "creditos",
+    "assets",
+    "addons",
+    "site",
+    "content",
+    "tools",
+    "cms",
+    "admin",
+    "api"
+  ],
+  "staticManifest": {
+    "adaptacion.css": "ddd11d8749e8d275551e0f1da1c08106841064883126b24485dadff5939a8177",
+    "app.js": "aa3503b07834dbc8dc453801a862c4db731c60e7bb2e85b5ca288c89db49e936",
+    "articulos.css": "ddb0a033ee8d10c87cdb07588c66b2f0d1c5d2dd034bd1b6420c364cd3747e9b",
+    "articulos.html": "cb9290d943ca6c37bfd4008293d401e1dccdb5438f6b6560a89796c88ec7359c",
+    "artrosis-rodilla.html": "d79071ed2c6a238d6bf6abfa992cd625c7bd051f70947f1699ceab51b44c21bc",
+    "aviso-legal.html": "2e76581c7ffae8fd94c11e8f18deb2bce1685732f49ead83976d156cb737c9d8",
+    "calcificacion-hombro.html": "28da1f0ecc02a3d373544ad809e0398f4681eeead3eeeb0b5886c2f0196a3de3",
+    "carousel.js": "209a33ebfb6577f9f0b95d209e922fbd1af5cdcedc82e92c05b9fba9cfb7841d",
+    "ciatica.html": "0ddc3a4d79956675d1fedb81f8bcf084bcbb4a7c296eb1f84759dbca95ccf1e8",
+    "CNAME": "c756f6bb8415ec5db068bb1a55fe81191df6e9181cc6dda1ff9eb796defb1c71",
+    "creditos.html": "8334354e5f5d86be5c5e4588555a8f3539ef5e82344bf81010af811a4478d33d",
+    "dolor-agudo-y-cronico.html": "b986ec7bd17011c58fedb8f53a0bafce196f502cc0868de1b1841ea5a163cb52",
+    "dolor-de-hombro.html": "adf93a2fc53a972163f8af481673e772f5ac236fc1aa52c0a1cde9296079a0de",
+    "dolor-nalga-al-sentarse.html": "329368ab73ce10ee4303a448ee80f9e3f77cf29fac1f8638824907c9a1606721",
+    "epicondilitis.html": "5bdf328c15efbb5ad757f950ec281a61558d4b49f3fbbc2e49be035e0b54b369",
+    "explorador.css": "9e62c0f9675d368aca3e17caa0fb0421da69f792db8e61cf87898dc27d93061f",
+    "explorador.js": "39760c443c74a44b5f5a0435175b5a2ba3725b2d8ff687f50215270f6f385691",
+    "fascitis-plantar.html": "1ac2d5a07520ea4cd292fa4697deb727197c1cdc0671de7956f4dae00ed8d5db",
+    "hombro-congelado.html": "a5a8474d266f8847f637cd2a66133edc920738258c6179a80287c49df836411e",
+    "interiores.css": "2d94a9974effccc3679d014c6fdc2bbf131ede4422e500b8bc0ae7eb6b04a108",
+    "lazy-scene.js": "bc929d38f4c0faaa2034a2c8c159a4aa3732082c82dadafe33f21fa413e92fc4",
+    "movil.css": "33609640fcb5cb742dae180d33697696245b5f4cd2c29e61b58245f22b07973f",
+    "nervio-atrapado.html": "5f567e7a38e25ca768e39cadfc5a4cea11089bcb5ac3daa4945cae2a978c002e",
+    "neuralgia-pudendo.html": "1b79894b58e717b01cb914f07c891fba6c60b2502422a25d565cf9b10ee749cc",
+    "robots.txt": "2cf2efb2d263134b24114385542d640f8374f1eca5145c68af81e2b0bea68bb9",
+    "seroma-tras-cirugia.html": "141f9d01587c26e916eb9c85948a28a5a2a13496af65db654fe94f5a57f49354",
+    "sobre-mi.html": "6a523dd83285f32721575681dab026d89405ee55a4109a66fa55bef94da63823",
+    "social.css": "6cf51010b22986615c75243f752400951b6e4889f7af6cbe1426a82971163a61",
+    "style.css": "c5d47a06803c5e5071bc354349ffc4474fb78f0bd7452461c62e814d49ba1c10",
+    "trocanteritis.html": "fb028e3290d24b8987e10cb9b76b894636d888d5c7bb659206f0c2cd80b8902a",
+    "assets/anatomy.glb": "318347f91e4989da0c271e9662df536943df1149b413fef01cf21586073ea73e",
+    "assets/compartir.jpg": "890347efe234447387b8aaa10a5c03396bb5f52fd2cf8e054e82ce2f812b2702",
+    "assets/escena-movil-1.webp": "718e82a7a9f494b8160b5a4d5bb390235e91f64be938f7d14b0d89ec0d088815",
+    "assets/escena-movil-2.webp": "5d466090cc3c46f57c87a61271c88088f5ffbe50bc3915fa9e51239f5b2cbec3",
+    "assets/escena-movil-3.webp": "1b490f92e3214b820eb1bc977d077a687f4822d153cb729509b72d9c48b63a78",
+    "assets/favicon.ico": "161c89e9f3b4e2a821cb238fb14a777f26741ca470f7db2977617aaf728e9ed9",
+    "assets/favicon.png": "72c4a7bf3de72348d35bc5b3f54f78d170424eaad5e4567ac2ed306fdfdb878f",
+    "assets/favicon.svg": "ac15b4915848d0bcd136efe3f29fa0837c10d40d03a910ff09817a9b62df5fff",
+    "assets/instagram-cadera.webp": "2b4db770c298892dd3b062a836043cd7c4d39e55ac7fc44e2372862f75366e6f",
+    "assets/instagram-ciatica.webp": "58acdd93115e9618d203ee5bb881a5c6a8010ad7ffba51223bf57c195b0d3ca8",
+    "assets/instagram-dolor.webp": "cb0c7f7575c4f54643c1c83bd6193bf58b2eed0ada3f2cdb680e2fa0537d7239",
+    "assets/instagram-formacion.webp": "429fbd43fed0e58f1fa875b1557796a7406c7364b94e9489965b0ee9b6aee769",
+    "assets/instagram-hombro.webp": "f69b84b7a1e63cc3750d8b36dfeacc74e725983419d7b6f3e3e35e0d52fa38a8",
+    "assets/instagram-interpain.webp": "5103f96c198fce8b8ffc6f5f9c77b55a13cf47f786fffe7fd9eea748a94fe8b7",
+    "assets/LICENSE-manrope.txt": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+    "assets/LICENSE-MODEL.txt": "8265514fadc829a1caf6b93d510dd8336a997865b4ec2ba9215a0efc302f28c2",
+    "assets/LICENSE-newsreader.txt": "fdfad38143ec470553cae82a1e45320bdd1b9ec70415d37bd0171051d8a4ded8",
+    "assets/LICENSE-three.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "assets/manrope.woff2": "30b83738add8c9edd9e3450b98036a9a8fb5668d0cbd4eb0ce5fe6761197f21f",
+    "assets/newsreader.woff2": "52f54c34206c51e23e2907bfda4f04fb11ac6ba7f75f8021b2d0075b091d1308",
+    "assets/procedimiento.webp": "cac583092484934ef93e03f14e7c44f2eff13c782c4dc102c2a3784caf68cbab",
+    "assets/retrato.webp": "8e5b70be0d191f9f82c53caf9f6858da682719f8c9da8c03400660ad67cf2ad4",
+    "aviso-legal/index.html": "b2bba0ab152435d398678717d054c966c8c29b52af661d0ef79b0f1076991135",
+    "creditos/index.html": "5ae7ba31577ea8c6c680aed6460824a48f5d6bcc15fea1ae1486055fbd0b6441",
+    "sobre-mi/index.html": "22e8b520f5ba200a25561c8481f8a556f10756fc9d8cccdd45838455237c00c7",
+    "three/three.core.js": "9edde002b066a9a05676a6127f67735b62baf399bdea529f2f7e31657da769e6",
+    "three/three.module.js": "9052042d676cb0fdc1ddfefe193053f34b7ac0513a616fdac4535d49987812ea",
+    "addons/loaders/GLTFLoader.js": "131c0f78c01d19368ae495caa65b3adaa10487810a36a05bb5901b769a35ac16",
+    "addons/utils/BufferGeometryUtils.js": "9fb63427ce6641fa14fd0baff9cc4d1b5f9c3d85fd084bf2e90e803c44ec1797",
+    "addons/utils/SkeletonUtils.js": "b1632a703206c3d830de9fcbe515696770d04b71a15ee6b50afa6d2c3298c86f"
+  },
+  "legacyAliases": [
+    "articulos.html",
+    "artrosis-rodilla.html",
+    "aviso-legal.html",
+    "calcificacion-hombro.html",
+    "ciatica.html",
+    "creditos.html",
+    "dolor-agudo-y-cronico.html",
+    "dolor-de-hombro.html",
+    "dolor-nalga-al-sentarse.html",
+    "epicondilitis.html",
+    "fascitis-plantar.html",
+    "hombro-congelado.html",
+    "nervio-atrapado.html",
+    "neuralgia-pudendo.html",
+    "seroma-tras-cirugia.html",
+    "sobre-mi.html",
+    "trocanteritis.html"
+  ],
+  "sitemapStaticRoutes": [
+    "/",
+    "/articulos/",
+    "/sobre-mi/"
+  ]
+}
