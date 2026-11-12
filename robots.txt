@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://doctoraveronicasoto.es/sitemap.xml
+Sitemap: https://draveronicasoto.es/sitemap.xml
