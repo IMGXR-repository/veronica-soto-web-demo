@@ -351,7 +351,7 @@ def build(root=ROOT):
         from check_site import check
         check(stage,articles,posts,settings)
         manifest={path.relative_to(stage).as_posix():hashlib.sha256(path.read_bytes()).hexdigest() for path in sorted(stage.rglob('*')) if path.is_file()}
-        (stage/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8',newline='')
+        (stage/'manifest.json').write_text(json.dumps(manifest,indent=2,sort_keys=True)+'\n',encoding='utf-8',newline='')
         backup=Path(scratch)/'previous'
         if output.exists():output.rename(backup)
         try:
@@ -364,4 +364,4 @@ def build(root=ROOT):
 
 if __name__=='__main__':
     manifest=build()
-    print(json.dumps({'files':len(manifest),'manifest_sha256':hashlib.sha256(json.dumps(manifest,indent=2).encode()+b'\n').hexdigest()}))
+    print(json.dumps({'files':len(manifest),'manifest_sha256':hashlib.sha256(json.dumps(manifest,indent=2,sort_keys=True).encode()+b'\n').hexdigest()}))

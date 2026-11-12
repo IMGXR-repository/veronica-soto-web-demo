@@ -1,33 +1,36 @@
-# CMS portable — fuente local
+# Dra. Verónica Soto — web divulgativa y fuente editorial
 
-Esta carpeta contiene una fuente autocontenida: 29 artículos, seis tarjetas Instagram y los recursos de la candidata R2. No requiere baselines, el proyecto histórico ni paquetes Python externos. No se ha instalado Pages CMS ni cambiado GitHub Pages.
+La web se genera desde los artículos y las tarjetas de Instagram de este repositorio. GitHub Actions valida el contenido y publica únicamente el artefacto _site en GitHub Pages, conservando draveronicasoto.es.
 
-Desde esta carpeta, con Python 3.12.14:
+## Qué se edita
 
-```text
-python tools/build_site.py
-python tools/check_site.py
-python tools/test_editorial.py
-```
+- content/articles/<slug>.json: título, resumen, categoría, cuerpo, fecha editorial, imagen opcional y visibilidad.
+- content/instagram/<identificador>.json: enlace de Instagram, título, portada local, alternativa, orden y visibilidad. Portada manual; no hay sincronización automática con Instagram.
+- site/templates/ y site/static/: plantillas y recursos del diseño; no son campos de edición habitual.
+- .pages.yml: configuración del editor externo Pages CMS. Instalación y acceso de cada editora se gestionan por separado; este archivo no contiene contraseñas.
 
-El primer comando valida toda la entrada y genera `_site`. Si hay un error, conserva la salida anterior. El segundo comprueba rutas, enlaces, fragmentos, recursos, metadatos y sincronía editorial. El tercero prueba el ciclo editorial en una copia temporal, sin modificar los documentos de esta carpeta.
+El panel escribe cambios en el repositorio. Guardar inicia la validación y publicación; comprobar el resultado en Actions y en la URL pública. Si falla la validación, la versión pública anterior se conserva.
 
-## Edición
+## Reglas editoriales
 
-Artículos: `content/articles/<slug>.json`. El título, resumen, categoría, cuerpo e imagen opcional se generan en la web. El identificador debe coincidir con el fichero; no se cambia al retitular. El cuerpo admite párrafos, subtítulos h2–h4, listas, enlaces HTTPS o internos, negrita, cursiva, citas e imágenes locales PNG/JPEG/WebP con alternativa. No admite HTML ejecutable, estilos o recursos remotos. La imagen de cabecera exige alternativa y aparece antes del cuerpo.
+Conservar el identificador URL de los artículos publicados. Las altas requieren fecha editorial real YYYY-MM-DD, no futura. No completar fechas históricas desconocidas ni convertir publicación en revisión médica.
 
-Las once categorías están en `site/settings.json`. Las altas requieren una fecha editorial real `YYYY-MM-DD` que no sea futura. Las fechas importadas, incluso cuando solo consta el mes o no consta fecha, se conservan; no se rellenan con el día de importación. El formulario deja el campo como texto para conservar esa precisión. El generador aplica la regla de altas. Los artículos nuevos no reciben una declaración automática de revisión médica. La fecha de publicación editorial corresponde al día real de publicación y es distinta del mes o fecha de revisión médica. Los 16 artículos aún no publicados se preparan para el 13-11-2026; si el despliegue pasa a otro día, revisar esa fecha antes de publicar sin alterar la revisión médica.
+published:false excluye el contenido de páginas, índice, portada y sitemap. No hace privado un borrador en este repositorio público ni su historial. No introducir pacientes, consentimientos, datos clínicos privados, contraseñas ni material confidencial. Las imágenes públicas siguen siendo públicas aunque su artículo no se publique.
 
-`published: false` excluye el artículo del árbol HTML, del índice, del explorador, de destacados y del sitemap. Si otros artículos o bloques de la web todavía enlazan ese destino, el build falla y conserva la salida anterior. Localiza las referencias mediante el slug, resuélvelas con una decisión editorial y vuelve a compilar antes de despublicar. El generador no redirige automáticamente esos enlaces al índice. Un borrador en un repositorio público sigue siendo público en Git y su historial. No introducir pacientes, datos clínicos, consentimientos o material confidencial. El build no publica los JSON editoriales, pero los recursos cargados en la carpeta pública son públicos aunque su artículo sea borrador.
+No se puede retirar un artículo mientras otro contenido público siga enlazándolo: la compilación falla y mantiene la versión anterior. Consultar origen y destino en el error de Actions, localizar referencias por identificador URL y resolverlas con una decisión editorial antes de volver a publicar. Si la referencia procede de una plantilla, solicitar ajuste técnico. No sustituir enlaces clínicos silenciosamente por el índice.
 
-Instagram: `content/instagram/<identificador>.json`. Título, URL de instagram.com exacta, portada local con derechos de uso y alternativa, orden entero y estado publicado. La portada se carga manualmente; la web no consulta Instagram. Empate por orden: identificador del fichero. Se admiten cero, una o múltiples tarjetas. El carrusel mantiene sus recursos y comportamiento originales con varias tarjetas.
+Imágenes nuevas en site/static/assets/articulos/: PNG, JPEG o WebP, con alternativa y derechos de uso. El generador comprueba formato y dimensiones; no determina derechos ni sustituye revisión visual. El cuerpo admite HTML editorial limitado, sin scripts, eventos, estilos ni recursos remotos.
 
-Las nuevas imágenes se guardan en `site/static/assets/articulos/`. Solo raster PNG/JPEG/WebP, hasta 20 MB y 12000 píxeles por dimensión; extensión y estructura de cabecera coherentes. SVG y ficheros desconocidos se rechazan. Esta comprobación no determina derechos ni sustituye revisión visual de la imagen.
+## Construcción y comprobación
 
-Los recursos históricos se protegen por hash en `site/settings.json`; cambios de diseño o archivos estáticos requieren una migración revisada de ese inventario. No se sobrescriben para editar artículos o tarjetas.
+Con Python 3.12.14 y sin paquetes externos:
 
-## Servicio pendiente de activación
+    python tools/build_site.py
+    python tools/check_site.py
+    python tools/test_editorial.py
 
-`.pages.yml` y `.github/workflows/publish.yml` son propuestas locales. Activar exige revisión independiente de esta salida, aprobación de proveedor/permisos de la App y migración concreta del repositorio de publicación, conservando dominio y fuente Pages. El workflow compila y comprueba antes de subir exclusivamente `_site`; el deploy depende del build. No contiene PAT, claves de navegador ni integración pública del CMS.
+La prueba editorial usa una copia temporal. La compilación valida toda la entrada antes de sustituir _site; los recursos históricos se protegen por inventario en site/settings.json.
 
-Tras activar, guardar contenido hace commit y lanza un build. Un guardado no acredita despliegue: comprobar el resultado del workflow y la URL pública. Si falla, corregir la entrada; la versión pública anterior sigue desplegada. La experiencia real del editor —incluida conservación de HTML al abrir/guardar y permisos de colaboradoras— sigue pendiente de prueba en servicio.
+Los HTML y recursos antiguos de la raíz se conservan como referencia de la migración estática. La fuente vigente es content/ y site/; modificar aquellos HTML no actualiza la publicación de Actions. El commit 5e61787 conserva la entrega estática anterior para recuperación.
+
+Rutas /<slug>/; los alias .html heredados usan redirección HTML inmediata, no HTTP301. Información divulgativa que no sustituye valoración profesional. Créditos y licencias en /creditos/ y los archivos de licencias de los recursos.
