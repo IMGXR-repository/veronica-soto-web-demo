@@ -1,9 +1,9 @@
 # Dra. Verónica Soto — web divulgativa
 
-Versión revisada el 12-11-2026: portada con recorrido3D al hacer scroll, Instagram, Sobre mí visual y directorio de13artículos organizado en9zonas.
+Web estática publicada con GitHub Pages desde main/raíz en draveronicasoto.es.
 
-GitHub Pages publica la rama main desde la raíz. Los recursos son locales y los enlaces utilizan rutas relativas para conservar el subdirectorio de la web. No se configura un dominio nuevo.
+Portada con recorrido 3D al hacer scroll en escritorio, alternativa ligera móvil, Instagram, Sobre mí y directorio de 13 artículos en nueve zonas. Fuentes WOFF2, imagen social y favicon.
 
-Este repositorio contiene el paquete web; las fuentes y evidencias de revisión se conservan en el proyecto local Diseño Web IA. Información divulgativa, no sustituye una valoración médica. Créditos y licencias en creditos.html y assets/.
+Las páginas usan rutas /slug/ con index.html en cada directorio; los enlaces antiguos .html conservan acceso mediante redirección HTML inmediata, canonical y enlace alternativo. No son redirecciones HTTP301. Las rutas y recursos se resuelven desde la raíz del dominio personalizado.
 
-Actualización de rendimiento y navegación: móvil con tres ilustraciones ligeras sin descargar3D; escritorio conserva la escena. FuentesWOFF2, imagen social y favicon en18páginas, nueve zonas en explorador y enlaces relacionados. Metadatos completos; contenido clínico conservado.
+Este repositorio contiene solo el paquete web; fuentes y evidencias se conservan en el proyecto local Diseño Web IA. Información divulgativa que no sustituye una valoración médica. Créditos y licencias en /creditos/ y assets/.
