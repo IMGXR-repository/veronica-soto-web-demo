@@ -13,7 +13,7 @@ El panel escribe cambios en el repositorio. Guardar inicia la validación y publ
 
 ## Reglas editoriales
 
-Conservar el identificador URL de los artículos publicados. Las altas requieren fecha editorial real YYYY-MM-DD, no futura. No completar fechas históricas desconocidas ni convertir publicación en revisión médica.
+Conservar el identificador URL de los artículos publicados. Las altas requieren fecha editorial real YYYY-MM-DD, no futura. Actions valida esa fecha en el horario Europe/Madrid; una ejecución local debe usar la misma zona horaria. No completar fechas históricas desconocidas ni convertir publicación en revisión médica.
 
 published:false excluye el contenido de páginas, índice, portada y sitemap. No hace privado un borrador en este repositorio público ni su historial. No introducir pacientes, consentimientos, datos clínicos privados, contraseñas ni material confidencial. Las imágenes públicas siguen siendo públicas aunque su artículo no se publique.
 

@@ -16,15 +16,18 @@ content:
     subfolders: false
     filename:
       template: "{fields.slug}.json"
-      field: create
+      field: false
     operations:
       create: true
       rename: false
       delete: false
     view:
+      fields: [title, category, date, published]
       primary: title
-      sort: date
-      order: desc
+      sort: [date, title, category, published]
+      default:
+        sort: date
+        order: desc
     fields:
       - name: title
         label: Título
@@ -100,15 +103,18 @@ content:
     subfolders: false
     filename:
       template: "{primary}.json"
-      field: create
+      field: false
     operations:
       create: true
       rename: false
       delete: false
     view:
+      fields: [title, order, published]
       primary: title
-      sort: order
-      order: asc
+      sort: [order, title, published]
+      default:
+        sort: order
+        order: asc
     fields:
       - name: url
         label: Enlace de Instagram (https://www.instagram.com/...)
