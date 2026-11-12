@@ -5,3 +5,5 @@ Versión revisada el 12-11-2026: portada con recorrido3D al hacer scroll, Instag
 GitHub Pages publica la rama main desde la raíz. Los recursos son locales y los enlaces utilizan rutas relativas para conservar el subdirectorio de la web. No se configura un dominio nuevo.
 
 Este repositorio contiene el paquete web; las fuentes y evidencias de revisión se conservan en el proyecto local Diseño Web IA. Información divulgativa, no sustituye una valoración médica. Créditos y licencias en creditos.html y assets/.
+
+Actualización de rendimiento y navegación: móvil con tres ilustraciones ligeras sin descargar3D; escritorio conserva la escena. FuentesWOFF2, imagen social y favicon en18páginas, nueve zonas en explorador y enlaces relacionados. Metadatos completos; contenido clínico conservado.
