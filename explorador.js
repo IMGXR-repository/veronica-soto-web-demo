@@ -4,7 +4,10 @@ const panels=[...document.querySelectorAll('.explorer [role="tabpanel"]')];
 if(!tabs.length||tabs.length!==panels.length)return;
 function select(index){tabs.forEach((tab,i)=>{tab.setAttribute('aria-selected',String(i===index));tab.tabIndex=i===index?0:-1;panels[i].hidden=i!==index;});}
 tabs.forEach((tab,index)=>{
- tab.addEventListener('click',()=>select(index));
+ tab.addEventListener('click',()=>{
+  select(index);
+  panels[index].scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+ });
  tab.addEventListener('keydown',event=>{
   let next=index;
   if(['ArrowDown','ArrowRight'].includes(event.key))next=(index+1)%tabs.length;
