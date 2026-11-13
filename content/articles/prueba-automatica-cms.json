@@ -1,0 +1,9 @@
+{
+  "title": "Prueba automática del CMS",
+  "slug": "prueba-automatica-cms",
+  "excerpt": "Borrador técnico de comprobación de la dirección automática y el guardado.",
+  "category": "entender-el-dolor",
+  "date": "2026-11-13",
+  "body": "<p>Este borrador técnico comprueba la creación automática del archivo. No se publica.</p>",
+  "published": false
+}
