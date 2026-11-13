@@ -1,9 +1,0 @@
-{
-  "title": "Prueba editorial del CMS",
-  "slug": "prueba-editorial-cms",
-  "excerpt": "Borrador técnico para comprobar el editor y la publicación automática. No contiene información médica ni datos personales.",
-  "category": "entender-el-dolor",
-  "date": "2026-11-13",
-  "body": "<p><strong>Prueba técnica del editor. Este borrador no debe aparecer en la web pública. Referencia: </strong><a href=\"https://example.com\"><strong>https://example.com</strong></a><strong> </strong></p>",
-  "published": false
-}
