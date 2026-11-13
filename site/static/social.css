@@ -22,3 +22,23 @@
 .footer-links .editorial-access{display:inline-flex;align-items:center;min-width:44px;min-height:44px;padding:0 8px;margin-left:8px;font-size:11px;line-height:1.5;white-space:nowrap;vertical-align:middle;color:#53756f;text-decoration:none;border-bottom:1px solid transparent}
 .footer-links .editorial-access:hover{color:var(--ink);border-bottom-color:#53756f}
 .footer-links .editorial-access:focus-visible{outline:3px solid #102b36;outline-offset:3px;border-bottom-color:#53756f}
+
+/* Navigation emphasis preserves the existing spacing and link geometry. */
+.site-header .site-navigation>a{transition:background-color 200ms,color 200ms,box-shadow 200ms,border-color 200ms}
+.site-header .site-navigation>a:not(.book){border-radius:3px;box-shadow:0 0 0 8px transparent}
+.site-header .site-navigation>a:hover,.site-header .site-navigation>a:focus-visible{background-color:#dcf38c;color:#102b36}
+.site-header .site-navigation>a:not(.book):hover,.site-header .site-navigation>a:not(.book):focus-visible{box-shadow:0 0 0 8px #dcf38c}
+.site-header .site-navigation>.book{background-color:#234b43;color:#f6f3ec;border-color:#234b43}
+.site-header .site-navigation>.book .navigation-arrow{color:#dcf38c}
+.site-header .site-navigation>.book:hover,.site-header .site-navigation>.book:focus-visible{background-color:#dcf38c;color:#102b36;border-color:#53756f}
+.site-header .site-navigation>.book:hover .navigation-arrow,.site-header .site-navigation>.book:focus-visible .navigation-arrow{color:#102b36}
+@media(prefers-reduced-motion:reduce){.site-header .site-navigation>a{transition:none}}
+
+.site-navigation .navigation-arrow{display:inline-block;transition:transform 200ms}
+.site-navigation>.book:hover .navigation-arrow,.site-navigation>.book:focus-visible .navigation-arrow{transform:translate(2px,-2px)}
+@media(max-width:480px){
+ header.site-header nav.site-navigation{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
+ header.site-header nav.site-navigation>a{justify-self:start}
+ header.site-header nav.site-navigation>.book{justify-self:start}
+}
+@media(prefers-reduced-motion:reduce){.site-navigation .navigation-arrow{transition:none}.site-navigation>.book:hover .navigation-arrow,.site-navigation>.book:focus-visible .navigation-arrow{transform:none}}
