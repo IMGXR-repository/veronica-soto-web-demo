@@ -18,3 +18,7 @@
  .footer-social{gap:24px;margin-top:12px}
 }
 @media(prefers-reduced-motion:reduce){.social-link{transition:none!important}}
+
+.footer-links .editorial-access{display:inline-flex;align-items:center;min-width:44px;min-height:44px;padding:0 8px;margin-left:8px;font-size:11px;line-height:1.5;white-space:nowrap;vertical-align:middle;color:#53756f;text-decoration:none;border-bottom:1px solid transparent}
+.footer-links .editorial-access:hover{color:var(--ink);border-bottom-color:#53756f}
+.footer-links .editorial-access:focus-visible{outline:3px solid #102b36;outline-offset:3px;border-bottom-color:#53756f}
