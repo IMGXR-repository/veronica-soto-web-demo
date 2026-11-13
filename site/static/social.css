@@ -36,9 +36,12 @@
 
 .site-navigation .navigation-arrow{display:inline-block;transition:transform 200ms}
 .site-navigation>.book:hover .navigation-arrow,.site-navigation>.book:focus-visible .navigation-arrow{transform:translate(2px,-2px)}
+.site-navigation .nav-label-short{display:none}
 @media(max-width:480px){
- header.site-header nav.site-navigation{display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
- header.site-header nav.site-navigation>a{justify-self:start}
- header.site-header nav.site-navigation>.book{justify-self:start}
+ header.site-header nav.site-navigation{display:flex;flex-wrap:nowrap;justify-content:space-between;gap:6px}
+ header.site-header nav.site-navigation>a{flex:none;min-width:44px;white-space:nowrap}
+ header.site-header nav.site-navigation>.book{padding:10px 12px}
+ .site-navigation .nav-label-full{display:none}
+ .site-navigation .nav-label-short{display:inline}
 }
 @media(prefers-reduced-motion:reduce){.site-navigation .navigation-arrow{transition:none}.site-navigation>.book:hover .navigation-arrow,.site-navigation>.book:focus-visible .navigation-arrow{transform:none}}
